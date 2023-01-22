@@ -1,0 +1,147 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"rel="stylesheet">
+    <title>omnifood</title>
+  </head>
+
+  <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+    <a href="/" class="flex items-center">
+    
+        <span class="logo-par self-center text-xl font-semibold">TravelEasy</span>
+    </a>
+    <div class="flex md:order-2">
+      
+        <button data-collapse-toggle="navbar-cta" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+      </button>
+    </div>
+    <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+      <ul class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+        <li>
+          <a href="/" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="/hotels" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Hotels</a>
+        </li>
+        <li>
+          <a href="/#gallery" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Gallery</a>
+        </li>
+        <li>
+          <a href="/#contact" class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+<div class=" flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div class="mt-20 pl-10 pr-10 pb-10 shadow-lg w-full max-w-md space-y-8">
+      <div>
+        <img class="mx-auto h-12 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="Your Company">
+        <h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Sign Up</h2>
+      </div>
+      <form class="mt-8 space-y-6" action="/signup" method="POST">
+        <% if(messages.error){ %>
+            <span class="text-red-500 text-xl"><%= messages.error %></span>
+            <% } %>
+        <input type="hidden" name="remember" value="true">
+        <div class="-space-y-px rounded-md shadow-sm flex flex-col gap-2">
+          <div>
+            <label for="name" class="sr-only">Email address</label>
+            <input id="name" value="<%=messages.name %>" name="name" type="name" autocomplete="name" class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Email address">
+          </div>
+          <div>
+            <label for="email-address" class="sr-only">Email address</label>
+            <input id="email-address"  value="<%=messages.email %>" name="email" type="email" autocomplete="email" class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Email address">
+          </div>
+          <div>
+            <label for="password" class="sr-only">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm" placeholder="Password">
+
+          </div>
+        </div>
+  
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-500">
+            <label for="remember-me" class="ml-2 block text-sm text-gray-900">Remember me</label>
+          </div>
+  
+          <div class="text-sm">
+            <a href="/login" onclick="location.replace('/login'),'_top'" class="font-medium text-indigo-600 hover:text-indigo-500">Already have an account?</a>
+          </div>
+        </div>
+  
+        <div>
+          <button type="submit" class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+              <!-- Heroicon name: mini/lock-closed -->
+              <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            Sign in
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- <div class="flex min-h-full items-center justify-center pt-24 py-12 px-4 sm:px-2 lg:px-4">
+    <div class="shadow-md px-20 max-w-2xl space-y-30">
+      <div>
+        <h2 class="mt-6  text-center text-3xl font-bold tracking-tight text-gray-900">Registration</h2>
+        
+      </div>
+      <form action="/signup" method="POST" class="mt-8 pb-2 space-y-20">
+        <% if(messages.error){ %>
+        <span class="text-red-500 text-xl"><%= messages.error %></span>
+        <% } %>
+        <input type="hidden" name="remember" value="true">
+        <div class="-space-y-px mt-5 rounded-md shadow-sm flex flex-col gap-2">
+          <div>
+            <label for="name" class="sr-only">name</label>
+            <input id="name" value="<%=messages.name %>" name="name" type="name" autocomplete="name"  class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-8 py-3 text-gray-900 placeholder-gray-500 focus:z-10 sm
+            text-lg" placeholder="Enter your name">
+          </div>
+          <div>
+            <label for="email-address" class="sr-only">Email address</label>
+            <input id="email-address"  value="<%=messages.email %>" name="email" type="email" autocomplete="email"  class="relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-4 py-1 text-gray-900 placeholder-gray-500 focus:z-10 sm
+            text-lg" placeholder="Email address">
+          </div>
+          <div>
+            <label for="password" class="sr-only">Password</label>
+            <input id="password" name="password" type="password" autocomplete="current-password"  class="relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-8 py-3 text-gray-900 placeholder-gray-500 focus:z-10 text-xl" placeholder="Password">
+          </div>
+         
+        </div>
+  
+        <div class="flex items-center gap-10 justify-between">
+          <div class="flex items-center">
+            <input id="remember-me" name="remember-me" type="checkbox" class="h-4 w-4 rounded border-gray-300 text-orange-600 focus:ring-orange-500">
+            <label for="remember-me" class="ml-2 block text-2xl text-gray-900">Remember me</label>
+          </div>
+  
+          <div class="text-sm">
+            <a href="/login" onclick="location.replace('/login'),'_top'"  class="font-medium text-2xl text-orange-600 hover:text-orange-500">Already have an account?</a>
+          </div>
+        </div>
+  
+        <div>
+          <button type="submit" class="group relative flex w-full justify-center rounded-xl border border-transparent bg-orange-600 py-3 px-6 font-medium text-white hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 text-xl">
+            <span class="absolute inset-y-0 left-0 flex items-center pl-3">
+        
+              <svg class="h-5 w-5 text-indigo-500 group-hover:text-indigo-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="orange" aria-hidden="true">
+                <path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            Sign Up
+          </button>
+        </div>
+      </form>
+    </div>
+  </div> -->

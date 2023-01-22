@@ -1,0 +1,128 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link type="text/css" rel="stylesheet" href="css/mystyle.css" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"rel="stylesheet">
+    <title> Travel website</title>
+</head>
+
+<div id="arrow">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+</div>
+<nav>
+    <div class="container">
+        <div class="menu-par">
+            <div class="logo-par">
+                <a href="/">
+                    <h2>TravelEasy</h2>
+                </a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a class="menu_hover" href="/hotels">Hotels</a></li>
+                    <li><a class="menu_hover" href="#gallery">gallery</a></li>
+                    <li><a class="menu_hover" href="#contact">contact us</a></li>
+                    <% if(user) { %>
+                        <li>
+                          <form id="logout" action="/logout" method="POST">
+                            <a class="menu_hover" onclick="document.getElementById('logout').submit()" href="#">Logout</a>
+                          </form>
+                          </li>
+                        <% } else { %>
+                        <li><a class="menu_hover" href="/login" onclick="location.replace('/login'),'_top'">Login</a></li>
+                        <li><a class="menu_hove nav-cta" href="/signup"  >Sign Up</a></li>
+                        <% } %>
+                </ul>
+            </div>
+            <div class="toggle-btn">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+    <header>
+        <div class="conatiner">
+            <div class="home_header_info">
+                <h1 class="typewrite" data-period="2000" data-type='[ "Happiness is closer than you think", "Adventure awaits, go find it.", "Don’t be a tourist, be a traveler." ]'></h1>
+                <p>Asperiores, tenetur, blanditiis, quaerat odit ex exercitationem pariatur quibusdam veritatis quisquam laboriosam esse beatae hic perferendis. Lorem ipsum dolor sit amet.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+        <div class="video">
+            <video id="video" autoplay loop muted>
+                <source type="video/mp4" src="images/travel-video.mp4" />
+            </video>
+        </div>
+    </header>
+    
+
+<!-- //gallery -->
+    <section class=" pl-10 gallery" id="gallery">
+        <div class="containergallery">
+          <p class="section-subtitle">Photo Gallery</p>
+
+          <h2 class="h2 section-title">Photo's From Travellers</h2>
+
+          <p class="section-text">
+            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
+            Sit ornare
+            mollitia tenetur, aptent.
+          </p>
+
+          <ul class=" pl-20 gallery-list">
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://media.istockphoto.com/id/525408989/photo/family-with-suitcases-passing-by-fountain-in-tourist-resort.jpg?b=1&s=170667a&w=0&k=20&c=6sjO5s66Cg5_4sXkQahhHi6SDJIr98t8uu-vzuN92TQ=" alt="Gallery image" height = "400px" width = "400px">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://media.istockphoto.com/id/1389754715/photo/cropped-shot-of-an-affectionate-young-family-of-three-taking-a-walk-on-the-beach.jpg?b=1&s=170667a&w=0&k=20&c=Ctq6ksXYtYdk8LED7JGgwxzU97g6pxpiI_7AIxgiov8=" alt="Gallery image" height = "400px" width = "400px">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Gallery image" height = "400px" width = "400px">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://media.istockphoto.com/id/675917222/photo/friends-are-the-family-we-get-to-choose.jpg?s=612x612&w=0&k=20&c=bZRE_pjhqYQZyqDi6fuLFB3KzzRr0hZHJM4gWstHh4g=" alt="Gallery image" height = "400px" width = "400px">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="https://media.istockphoto.com/id/1263638640/photo/young-women-enjoying-sunny-day-on-mountain.jpg?s=170667a&w=0&k=20&c=Oh5v5Clz3RlMHHxoo2KgHYkNuC1OCKP_7YoIG-qq1yQ=" alt="Gallery image" height = "400px" width = "400px">
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+                <figure class="gallery-image">
+                  <img src="https://media.istockphoto.com/id/1357530079/photo/loving-family-going-on-holiday-together.jpg?b=1&s=170667a&w=0&k=20&c=ZEKvrsrB7QcDtcl7LAWm8dQVBc4zlShIu9L2vEP9zuM=" alt="Gallery image" height = "400px" width = "400px">
+                </figure>
+              </li>
+          </ul>
+        </div>
+      </section>
+      <div id="contact" class = "Newslettercontainer">
+        <div class = "Newsletter">
+            <h2>Newsletter</h2>
+        </div>
+        <div class = "newsletterpara">
+            Send Your queries to us here
+        </div>
+        <div class = "newsletterbody">
+            <Form method = "get">
+                <div class = "inputbox">
+                    <input class = "inputquery" type = "text" placeholder="Type here">
+                    <div class="material-icons">send</div>
+                </div>
+            </Form>
+        </div>
+        </div>
+    

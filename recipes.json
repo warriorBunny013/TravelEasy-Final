@@ -1,0 +1,142 @@
+[   
+    {
+        "_id":{ "$oid":"63c30f289ac07dedb634581f"},
+      "name":"Vishnu Vihar",
+       "location":"New Delhi",
+       "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+       "wifi":"free wifi",
+       "rating":"4.8",
+        "image":"https://i.postimg.cc/5t1tTqqY/pexels-pixabay-261169.jpg",
+        "price":840
+    },
+    {
+        "_id":{"$oid":"63c30fa69ac07dedb6345820"},
+        "name":"Feather sort",
+        "location":"New Delhi",
+        "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+        "wifi":"free wifi",
+        "rating":"4.9",
+         "image":"https://i.postimg.cc/nrnMmKMf/pexels-pixabay-260931.jpg",
+         "price":950
+
+    },
+    {
+        "_id":{"$oid":"63c30fc69ac07dedb6345821"},
+       "name":"Shivani Mahal",
+       "location":"kolkata",
+       "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+       "wifi":"wifi not available",
+       "rating":"4.8",
+        "image":"https://i.postimg.cc/KYr2M6T4/pexels-pixabay-258154.jpg",
+        "price":900
+
+    },
+    {
+        "_id":{"$oid":"63c30fde9ac07dedb6345822"},
+        "name":"Burj Khalifa",
+        "location":"Bihar",
+        "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+        "wifi":"free wifi",
+        "rating":"4.1",
+         "image":"https://i.postimg.cc/KcsyBr17/pexels-naim-benjelloun-2291624.jpg",
+         "price":780
+
+    },
+    {
+        "_id":{"$oid":"63c30ff69ac07dedb6345823"},
+        "name":"The Luxury Collection Hotels & Resorts.",
+        "location":"Mumbai",
+       "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+       "wifi":"free wifi",
+       "rating":"4.2",
+        "image":"https://i.postimg.cc/yxDtvtDm/pexels-konstantinos-eleftheriadis-2034335.jpg",
+        "price":500
+
+    },
+    {
+        "_id":{"$oid":"63c3100a9ac07dedb6345824"},
+        "name":"Shreya's villa",
+        "location":"chennai",
+       "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+       "wifi":"free wifi",
+       "rating":"4.8",
+        "image":"https://i.postimg.cc/LXXb8wBc/pexels-iv-n-rivero-1001965.jpg",
+        "price":600
+    },
+    {
+        "_id":{"$oid":"63c310239ac07dedb6345825"},
+        "name":"Uditi's Residence",
+        "location":"kolkata",
+       "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+       "wifi":"wifi not available",
+       "rating":"4.7",
+        "image":"https://i.postimg.cc/z3mtpBZN/pexels-donald-tong-189296.jpg",
+        "price":940
+
+    },
+    {
+        "_id":{"$oid":"63c310399ac07dedb6345826"},
+        "name":"Aman Resort",
+        "location":"bihar",
+       "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+       "wifi":"free wifi",
+       "rating":"3.6",
+        "image":"https://i.postimg.cc/Rhf5v2vM/pexels-asad-photo-maldives-1450363.jpg",
+        "price":740
+
+    },
+    {
+        "_id":{"$oid":"63c3104b9ac07dedb6345827"},
+        "name":"Ritz-Carlton Hotel",
+        "location":"Mumbai",
+       "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+       "wifi":"free wifi",
+       "rating":"4.1",
+        "image":"https://i.postimg.cc/Y90Dr1N1/bed1.jpg",
+        "price":640
+
+    },
+    {
+        "_id":{"$oid":"63c3105e9ac07dedb6345828"},
+        "name":"St Regis Hotels",
+        "location":"New Delhi",
+       "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+       "wifi":"wifi not available",
+       "rating":"4.9",
+        "image":"https://i.postimg.cc/ZYN1vthm/pexels-asad-photo-maldives-1320679.jpg",
+        "price":1100
+    },
+    {
+        "_id":{"$oid":"63c310729ac07dedb6345829"},
+        "name":"Four Seasons",
+        "location":"New Delhi",
+       "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+       "wifi":"free wifi",
+       "rating":"4.8",
+        "image":"https://i.postimg.cc/fL9gdXpC/pexels-asad-photo-maldives-1268871.jpg",
+        "price":2000
+
+    },
+    {
+        "_id":{"$oid":"63c310889ac07dedb634582a"},
+        "name":"Hyatt",
+        "location":"New Delhi",
+        "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+        "wifi":"free wifi",
+        "rating":"4.6",
+         "image":"https://i.postimg.cc/QdCm51W7/pexels-tom-balabaud-1579739.jpg",
+         "price":790
+
+    },
+    {
+        "_id":{"$oid":"63c3109b9ac07dedb634582b"},
+        "name":"Rosewood Hotels & Resorts",
+        "location":"New Delhi",
+       "Description":"Featuring 3-star accommodation, Vishnu Vihar is located in New Delhi, 12 km from Qutub Minar and 13 km from MG Road. With free WiFi, this 3-star hotel offers room service and an ATM.",
+       "wifi":"free wifi",
+       "rating":"4.5",
+        "image":"https://i.postimg.cc/xTT3DM5Z/pexels-quark-studio-3201921.jpg",
+        "price":900
+
+    }
+]
