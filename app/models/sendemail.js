@@ -13,8 +13,8 @@ async function sendEmail(mailOptions) {
     // port: process.env.SMTP_PORT,
     // secure: false, // true for 465, false for other ports
     auth: {
-      user: "uditi013@gmail.com", // generated ethereal user
-      pass: "daecrqjsibhqjgod", // generated ethereal password
+      user: process.env.SMTP_EMAIL, // generated ethereal user
+      pass: process.env.SMTP_PASS, // generated ethereal password
     },
   });
 
