@@ -6,8 +6,8 @@
   "author": "uditi, shreya, shiya, vanshika",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon server.js",
-    "serve": "node server.js",
+    "dev": "nodemon index.js",
+    "serve": "node index.js",
     "development": "mix",
     "watch": "npx mix watch",
     "production": "mix --production"
