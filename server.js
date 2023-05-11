@@ -70,6 +70,7 @@ app.set('views',path.join(__dirname,'/resources/views'))
 app.set('view engine','ejs')
 // mongoose.set('strictQuery', true);
 app.use(express.static('public'));
+
 require('./routes/web')(app)
 
 

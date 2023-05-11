@@ -82,7 +82,7 @@ function authController(){
             </div>`
                })
 
-    return res.redirect('/')
+    return res.redirect('/login')
 
             }).catch(err=>{
                 req.flash('error','Something went wrong')

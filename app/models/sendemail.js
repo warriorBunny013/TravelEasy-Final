@@ -9,16 +9,17 @@ dotenv.config();
 async function sendEmail(mailOptions) {
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
+    host: "smtp.gmail.com",
     // port: process.env.SMTP_PORT,
     // secure: false, // true for 465, false for other ports
     auth: {
-      user: process.env.SMTP_EMAIL, // generated ethereal user
-      pass: process.env.SMTP_PASS, // generated ethereal password
+      user: "uditi013@gmail.com", // generated ethereal user
+      pass: "daecrqjsibhqjgod", // generated ethereal password
     },
   });
 
-  // send mail with defined transport object
+  try{
+   // send mail with defined transport object
   await transporter.sendMail({
     from: mailOptions.from, // sender address
     to: mailOptions.to, // list of receivers
@@ -27,6 +28,10 @@ async function sendEmail(mailOptions) {
   });
 
   console.log("Email sent successfully");
+  }catch(error){
+     console.log("Email cannot be sent! some problems occured!")
+  }
+  
 }
 
 // sendEmail().catch(console.error);
