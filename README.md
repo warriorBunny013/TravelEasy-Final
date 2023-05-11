@@ -6,7 +6,11 @@
 ![Screenshot (375)](https://github.com/warriorBunny013/TravelEasy-Final/assets/97738453/032ff61a-7343-44f6-bd6a-55bafc782478)
 ![Screenshot (376)](https://github.com/warriorBunny013/TravelEasy-Final/assets/97738453/2ec979c6-0f81-40ca-b91b-7836888b5bd9)
 # ABOUT and Features
-
+- User authentication
+- Browse hotels by places
+- Book hotels
+- email notification to all signed up users
+- Google map integration
 # Tech Stacks used
 - Node js
 - Express js
