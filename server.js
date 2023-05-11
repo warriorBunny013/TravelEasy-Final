@@ -9,7 +9,7 @@ const ejs=require('ejs')
 const path=require('path')
 const expressLayout=require('express-ejs-layouts')
 const passport=require('passport')
-const PORT=2100
+const PORT=process.env.PORT || 2100
 //process.env.PORT || 
 app.listen(PORT,()=>{
     console.log(`Listening on port hello ${PORT}`)
@@ -41,7 +41,7 @@ app.use(
     secret:"thisismysecret",
     resave: false,
     saveUninitialized:false,
-    store:MongoDBStore.create({ mongoUrl:"mongodb://localhost/omnifoodsite"}),
+    store:MongoDBStore.create({ mongoUrl:process.env.MONGO_URL}),
     cookie:{maxAge: 1000*60*60*24}
 }))
 //passport config
