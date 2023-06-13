@@ -7,10 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon index.js",
-    "serve": "node index.js",
-    "development": "mix",
-    "watch": "npx mix watch",
-    "production": "mix --production"
+    "serve": "node index.js"
   },
    "engines": {
     "node": ">=14.20.1"
